@@ -2,9 +2,6 @@
 
 Nền tảng quản lý thiết bị mạng (router, switch, access point, firewall) trên cloud — **Release 1: nền tảng full-stack**.
 
-> **Trạng thái trung thực:** mã nguồn được viết trong môi trường không có mạng nên **chưa được build hay chạy thử**.
-> Xem `docs/IMPLEMENTATION_STATUS.md` để biết chính xác điều gì đã/chưa được xác minh. Hãy chạy `scripts\test.ps1` trên máy bạn và gửi kết quả nếu có lỗi.
-
 ## Đã có trong bản này
 - Đăng nhập bằng session phía server (cookie HttpOnly, bảo vệ CSRF), phân quyền theo vai trò ở backend.
 - Cô lập dữ liệu theo tổ chức (tenant): mọi truy vấn thiết bị/site đều lọc theo tổ chức của người đăng nhập.
@@ -65,7 +62,7 @@ frontend/   React + TypeScript + Vite + Tailwind
 docs/       ARCHITECTURE.md, IMPLEMENTATION_STATUS.md, adr/
 scripts/    setup, start-db, start-backend, start-frontend, check, test
 ```
-Phiên bản đã chốt: Java 21, Spring Boot 3.5.6, springdoc 2.8.9, PostgreSQL 16, React 18.3, Vite 6, Tailwind 3.4, Vitest 3, TypeScript 5.7.
+Phiên bản : Java 21, Spring Boot 3.5.6, springdoc 2.8.9, PostgreSQL 16, React 18.3, Vite 6, Tailwind 3.4, Vitest 3, TypeScript 5.7.
 
 ## Bảo mật (môi trường dev)
 `.env` bị Git bỏ qua; PostgreSQL chỉ mở cho `127.0.0.1`; mật khẩu sinh ngẫu nhiên. Dữ liệu demo và Swagger công khai chỉ dành cho máy phát triển — xem "Giới hạn đã biết" trong `docs/IMPLEMENTATION_STATUS.md` trước khi triển khai thật.
