@@ -1,0 +1,33 @@
+# Secrets và cấu hình cục bộ
+.env
+.env.*
+!.env.example
+
+# Công cụ tải về cục bộ (Maven do scripts/start-backend.ps1 tải)
+.tools/
+
+# Java / Maven
+backend/target/
+*.class
+*.jar
+*.log
+HELP.md
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+*.tsbuildinfo
+
+# IDE
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+.classpath
+.project
+.settings/
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db

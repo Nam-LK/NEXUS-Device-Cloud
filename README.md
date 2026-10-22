@@ -60,7 +60,7 @@ Swagger UI: http://localhost:8080/swagger-ui.html · Health: http://localhost:80
 
 ## Cấu trúc
 ```
-backend/    Spring Boot (com.nexus.devicecloud): identity, organizations, sites, devices, dashboard, platform, shared
+backend/    Spring Boot MVC (com.nexus.devicecloud): controller, service, repository, entity, dto, security, config, filter, exception
 frontend/   React + TypeScript + Vite + Tailwind
 docs/       ARCHITECTURE.md, IMPLEMENTATION_STATUS.md, adr/
 scripts/    setup, start-db, start-backend, start-frontend, check, test
